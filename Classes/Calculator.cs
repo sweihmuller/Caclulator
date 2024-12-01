@@ -11,10 +11,16 @@ namespace Caclulator
         private float numberOne;
         private float numberTwo;
 
-        public void Caclulator(float numberOne, float numberTwo)
+        public float NumberOne
         {
-            this.numberOne = numberOne;
-            this.numberTwo = numberTwo;
+            set { this.numberOne = value; }
+            get { return numberOne; }
+        }
+
+        public float NumberTwo
+        {
+            set { this.numberTwo = value; }
+            get { return numberTwo; }
         }
 
         public float Add(float numberOne, float numberTwo)
