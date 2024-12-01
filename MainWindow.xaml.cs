@@ -191,5 +191,18 @@ namespace Caclulator
             operation = "";
             result = 0;
         }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            if (!hasBeenPressed) 
+            {
+                calculator.NumberOne = 0;
+                hasBeenPressed = false;
+            } else
+            {
+                calculator.NumberTwo = 0;
+                hasBeenPressed = true;
+            }
+        }
     }
 }
