@@ -71,12 +71,7 @@ namespace Caclulator
                     result = calculator.Divide(calculator.NumberOne, calculator.NumberTwo);
                     break;
             }
-            hasBeenPressed = false;
-            MessageBox.Show(result.ToString());
-            calculator.NumberOne = 0;
-            calculator.NumberTwo = 0;
-            operation = "";
-            result = 0;
+            ResetCalculator();
         }
 
         private void btnNumberOne_Click(object sender, RoutedEventArgs e)
@@ -186,6 +181,15 @@ namespace Caclulator
             {
                 calculator.NumberTwo = float.Parse(btnNumberNine.Content.ToString());
             }
+        }
+
+        private void ResetCalculator()
+        {
+            hasBeenPressed = false;
+            calculator.NumberOne = 0;
+            calculator.NumberTwo = 0;
+            operation = "";
+            result = 0;
         }
     }
 }
