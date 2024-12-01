@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Caclulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="457" Width="392">
+        Title="MainWindow" Height="457" Width="531">
     <Grid>
+        <Rectangle x:Name="rtgDisplayNumber" Stroke="Black" Margin="10,10,10,354" Fill="#4C383838"/>
+        <Button x:Name="btnNumberOne" Content="1&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="15,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontSize="48" FontFamily="Verdana"/>
+        <Button x:Name="btnNumberTwo" Content="2" HorizontalAlignment="Left" Margin="121,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberThree" Content="3" HorizontalAlignment="Left" Margin="220,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberSix" Content="6" HorizontalAlignment="Left" Margin="220,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberFive" Content="5" HorizontalAlignment="Left" Margin="121,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberFour" Content="4" HorizontalAlignment="Left" Margin="15,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberSeven" Content="7" HorizontalAlignment="Left" Margin="15,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberEight" Content="8" HorizontalAlignment="Left" Margin="121,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnNumberNine" Content="9" HorizontalAlignment="Left" Margin="220,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="349,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnSubstraction" Content="-" HorizontalAlignment="Left" Margin="435,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnAddition" Content="+" HorizontalAlignment="Left" Margin="349,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnMultiplication" Content="x" HorizontalAlignment="Left" Margin="349,218,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="435,218,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnResult" Content="=&#xD;&#xA;" HorizontalAlignment="Left" Margin="349,348,0,0" VerticalAlignment="Top" Height="60" Width="146" FontFamily="Verdana" FontSize="48"/>
 
     </Grid>
 </Window>
