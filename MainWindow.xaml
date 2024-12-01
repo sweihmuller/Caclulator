@@ -7,21 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="467" Width="531">
     <Grid>
-        <Rectangle x:Name="rtgDisplayNumber" Stroke="Black" Margin="10,10,10,354" Fill="#4C383838"/>
-        <Button x:Name="btnNumberOne" Content="1" HorizontalAlignment="Left" Margin="15,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontSize="48" FontFamily="Verdana" Click="btnNumberOne_Click"/>
-        <Button x:Name="btnNumberTwo" Content="2" HorizontalAlignment="Left" Margin="121,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberTwo_Click"/>
-        <Button x:Name="btnNumberThree" Content="3" HorizontalAlignment="Left" Margin="220,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberThree_Click"/>
-        <Button x:Name="btnNumberSix" Content="6" HorizontalAlignment="Left" Margin="220,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberSix_Click"/>
-        <Button x:Name="btnNumberFive" Content="5" HorizontalAlignment="Left" Margin="121,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberFive_Click"/>
-        <Button x:Name="btnNumberFour" Content="4" HorizontalAlignment="Left" Margin="15,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberFour_Click"/>
-        <Button x:Name="btnNumberSeven" Content="7" HorizontalAlignment="Left" Margin="15,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberSeven_Click"/>
-        <Button x:Name="btnNumberEight" Content="8" HorizontalAlignment="Left" Margin="121,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberEight_Click"/>
-        <Button x:Name="btnNumberNine" Content="9" HorizontalAlignment="Left" Margin="220,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberNine_Click"/>
-        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="349,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
-        <Button x:Name="btnSubstraction" Content="-" HorizontalAlignment="Left" Margin="435,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnSubstraction_Click"/>
-        <Button x:Name="btnAddition" Content="+" HorizontalAlignment="Left" Margin="349,110,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnAddition_Click"/>
-        <Button x:Name="btnMultiplication" Content="x" HorizontalAlignment="Left" Margin="349,218,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnMultiplication_Click"/>
-        <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="435,218,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnDivision_Click"/>
-        <Button x:Name="btnResult" Content="=&#xD;&#xA;" HorizontalAlignment="Left" Margin="349,355,0,0" VerticalAlignment="Top" Height="60" Width="146" FontFamily="Verdana" FontSize="48" Click="btnResult_Click"/>
+        <Rectangle x:Name="rtgDisplayNumber" Stroke="Black" Margin="10,5,10,359" Fill="#4C383838"/>
+        <Button x:Name="btnNumberOne" Content="1" HorizontalAlignment="Left" Margin="15,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontSize="48" FontFamily="Verdana" Click="btnNumberOne_Click"/>
+        <Button x:Name="btnNumberTwo" Content="2" HorizontalAlignment="Left" Margin="121,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberTwo_Click"/>
+        <Button x:Name="btnNumberThree" Content="3" HorizontalAlignment="Left" Margin="220,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberThree_Click"/>
+        <Button x:Name="btnNumberSix" Content="6" HorizontalAlignment="Left" Margin="220,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberSix_Click"/>
+        <Button x:Name="btnNumberFive" Content="5" HorizontalAlignment="Left" Margin="121,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberFive_Click"/>
+        <Button x:Name="btnNumberFour" Content="4" HorizontalAlignment="Left" Margin="15,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberFour_Click"/>
+        <Button x:Name="btnNumberSeven" Content="7" HorizontalAlignment="Left" Margin="15,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberSeven_Click"/>
+        <Button x:Name="btnNumberEight" Content="8" HorizontalAlignment="Left" Margin="121,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberEight_Click"/>
+        <Button x:Name="btnNumberNine" Content="9" HorizontalAlignment="Left" Margin="220,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberNine_Click"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="349,162,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48"/>
+        <Button x:Name="btnSubstraction" Content="-" HorizontalAlignment="Left" Margin="435,162,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnSubstraction_Click"/>
+        <Button x:Name="btnAddition" Content="+" HorizontalAlignment="Left" Margin="349,162,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnAddition_Click"/>
+        <Button x:Name="btnMultiplication" Content="x" HorizontalAlignment="Left" Margin="349,270,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnMultiplication_Click"/>
+        <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="435,270,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnDivision_Click"/>
+        <Button x:Name="btnResult" Content="=&#xD;&#xA;" HorizontalAlignment="Left" Margin="349,381,0,0" VerticalAlignment="Top" Height="60" Width="146" FontFamily="Verdana" FontSize="48" Click="btnResult_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="349,117,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="24" Width="146" Click="btnClear_Click"/>
     </Grid>
 </Window>
