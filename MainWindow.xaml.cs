@@ -60,15 +60,19 @@ namespace Caclulator
             {
                 case "+":
                     result = calculator.Add(calculator.NumberOne, calculator.NumberTwo);
+                    ShowNumber(result.ToString());
                     break;
                 case "-":
                     result = calculator.Substract(calculator.NumberOne, calculator.NumberTwo);
+                    ShowNumber(result.ToString());
                     break;
                 case "*":
                     result = calculator.Multiply(calculator.NumberOne, calculator.NumberTwo);
+                    ShowNumber(result.ToString());
                     break;
                 case "/":
                     result = calculator.Divide(calculator.NumberOne, calculator.NumberTwo);
+                    ShowNumber(result.ToString());
                     break;
             }
             ResetCalculator();
@@ -80,9 +84,11 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberOne.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             } else
             {
                 calculator.NumberTwo = float.Parse(btnNumberOne.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -91,10 +97,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberTwo.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberTwo.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -103,10 +111,13 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberThree.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
+
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberThree.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
 
         }
@@ -116,10 +127,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberFour.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberFour.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -128,10 +141,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberFive.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberFive.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -140,10 +155,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberSix.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberSix.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -152,10 +169,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberSeven.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberSeven.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -164,10 +183,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberEight.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberEight.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -176,10 +197,12 @@ namespace Caclulator
             if (!hasBeenPressed)
             {
                 calculator.NumberOne = float.Parse(btnNumberNine.Content.ToString());
+                ShowNumber(calculator.NumberOne.ToString());
             }
             else
             {
                 calculator.NumberTwo = float.Parse(btnNumberNine.Content.ToString());
+                ShowNumber(calculator.NumberTwo.ToString());
             }
         }
 
@@ -190,19 +213,18 @@ namespace Caclulator
             calculator.NumberTwo = 0;
             operation = "";
             result = 0;
+
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            if (!hasBeenPressed) 
-            {
-                calculator.NumberOne = 0;
-                hasBeenPressed = false;
-            } else
-            {
-                calculator.NumberTwo = 0;
-                hasBeenPressed = true;
-            }
+            ResetCalculator();
+            ShowNumber("");
+        }
+
+        private void ShowNumber(string number)
+        {
+            txtBNumber.Text = number;
         }
     }
 }

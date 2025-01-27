@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Caclulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="467" Width="531">
+        Title="MainWindow" Height="493" Width="524">
     <Grid>
-        <Rectangle x:Name="rtgDisplayNumber" Stroke="Black" Margin="10,5,10,359" Fill="#4C383838"/>
+        <Rectangle x:Name="rtgDisplayNumber" Stroke="Black" Margin="10,5,10,365" Fill="#4C383838"/>
         <Button x:Name="btnNumberOne" Content="1" HorizontalAlignment="Left" Margin="15,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontSize="48" FontFamily="Verdana" Click="btnNumberOne_Click"/>
         <Button x:Name="btnNumberTwo" Content="2" HorizontalAlignment="Left" Margin="121,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberTwo_Click"/>
         <Button x:Name="btnNumberThree" Content="3" HorizontalAlignment="Left" Margin="220,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.429,-0.9" Height="75" Width="85" FontFamily="Verdana" FontSize="48" Click="btnNumberThree_Click"/>
@@ -24,5 +24,6 @@
         <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="435,270,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnDivision_Click"/>
         <Button x:Name="btnResult" Content="=&#xD;&#xA;" HorizontalAlignment="Left" Margin="349,381,0,0" VerticalAlignment="Top" Height="60" Width="146" FontFamily="Verdana" FontSize="48" Click="btnResult_Click"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="349,117,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="24" Width="146" Click="btnClear_Click"/>
+        <TextBlock x:Name="txtBNumber" HorizontalAlignment="Left" Margin="379,8,0,0" VerticalAlignment="Top" Height="102" Width="135" FontWeight="Bold" TextAlignment="Center" FontFamily="Verdana" FontSize="48"/>
     </Grid>
 </Window>
