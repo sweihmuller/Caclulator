@@ -55,7 +55,7 @@ namespace Caclulator
 
         private void btnResult_Click(object sender, RoutedEventArgs e)
         {
-
+            computeResult();
             switch (operation)
             {
                 case "+":
@@ -212,8 +212,6 @@ namespace Caclulator
             calculator.NumberOne = 0;
             calculator.NumberTwo = 0;
             operation = "";
-            result = 0;
-
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
@@ -225,6 +223,22 @@ namespace Caclulator
         private void ShowNumber(string number)
         {
             txtBNumber.Text = number;
+        }
+
+        private void computeResult()
+        {
+            if (result == 0)
+            {
+                return;
+            }
+            if (calculator.NumberOne == 0 && calculator.NumberTwo == 0)
+            {
+                calculator.NumberOne = result;
+                calculator.NumberTwo = result;
+            } else if (calculator.NumberOne == 0) 
+            {
+                calculator.NumberOne = result;
+            }
         }
     }
 }

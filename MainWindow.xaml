@@ -24,6 +24,6 @@
         <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="435,270,0,0" VerticalAlignment="Top" Height="90" Width="60" FontFamily="Verdana" FontSize="48" Click="btnDivision_Click"/>
         <Button x:Name="btnResult" Content="=&#xD;&#xA;" HorizontalAlignment="Left" Margin="349,381,0,0" VerticalAlignment="Top" Height="60" Width="146" FontFamily="Verdana" FontSize="48" Click="btnResult_Click"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="349,117,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="24" Width="146" Click="btnClear_Click"/>
-        <TextBlock x:Name="txtBNumber" HorizontalAlignment="Left" Margin="379,8,0,0" VerticalAlignment="Top" Height="102" Width="135" FontWeight="Bold" TextAlignment="Center" FontFamily="Verdana" FontSize="48"/>
+        <TextBlock x:Name="txtBNumber" HorizontalAlignment="Left" Margin="349,8,0,0" VerticalAlignment="Top" Height="102" Width="165" FontWeight="Bold" TextAlignment="Center" FontFamily="Verdana" FontSize="48" TextWrapping="Wrap"/>
     </Grid>
 </Window>
